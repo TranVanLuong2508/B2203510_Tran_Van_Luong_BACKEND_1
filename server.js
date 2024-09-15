@@ -1,5 +1,5 @@
 const app =require("./app")
-const config = require("./app/config")
+const config = require("./app/config/index")
 
 //start server
 const PORT = config.app.port
