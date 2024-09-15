@@ -1,7 +1,9 @@
 
 const express =  require("express")
 const cors = require("cors")
+
 const contactsRouter =require("./app/routes/contact.route")
+
 const ApiError = require("./app/api-error")
 
 const app = express()
@@ -31,5 +33,10 @@ app.use("/api/contacts", contactsRouter)
         message:error.message || "Internal Server Error",
     })
  })
+
 module.exports = app
+
+
 //node
+
+
